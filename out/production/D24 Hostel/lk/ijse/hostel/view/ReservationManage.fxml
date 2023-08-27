@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.ReservationManage">
+   <children>
+      <Label layoutX="246.0" layoutY="14.0" prefHeight="39.0" prefWidth="385.0" text="RESERVATION INFORMATION">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="741.0" layoutY="55.0" text="Reservation ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtResId" layoutX="741.0" layoutY="84.0" />
+      <Label layoutX="26.0" layoutY="143.0" text="ROOM ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbROOMId" layoutX="26.0" layoutY="172.0" prefHeight="27.0" prefWidth="176.0" />
+      <Label layoutX="26.0" layoutY="220.0" text="ST ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSTId" layoutX="26.0" layoutY="253.0" prefHeight="27.0" prefWidth="176.0" />
+      <Label layoutX="392.0" layoutY="142.0" text="ROOM-TYPE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRoomType" layoutX="392.0" layoutY="171.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label layoutX="741.0" layoutY="148.0" text="QTY">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="741.0" layoutY="170.0" prefHeight="27.0" prefWidth="86.0" />
+      <Label layoutX="392.0" layoutY="220.0" text="ST-NAME">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStName" layoutX="392.0" layoutY="253.0" prefHeight="27.0" prefWidth="188.0" />
+      <JFXButton buttonType="RAISED" layoutX="802.0" layoutY="358.0" onAction="#onActionDeleteRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: red;" text="DELETE" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="693.0" layoutY="358.0" onAction="#onActionUpdateRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #192a56;" text="UPDATE" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="583.0" layoutY="358.0" onAction="#onActionSaveRes" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: green;" text="SAVE" textFill="WHITE" />
+      <TableView fx:id="tblReservation" layoutX="79.0" layoutY="401.0" onMouseClicked="#onMouseClickReservation" prefHeight="239.0" prefWidth="814.0">
+        <columns>
+          <TableColumn fx:id="colResId" prefWidth="123.0" text="RES ID" />
+          <TableColumn fx:id="colStId" prefWidth="125.0" text="ST ID" />
+            <TableColumn fx:id="colStName" prefWidth="162.0" text="ST NAME" />
+            <TableColumn fx:id="colRoomId" prefWidth="124.0" text="ROOM ID" />
+            <TableColumn fx:id="colRoomType" prefWidth="144.0" text="ROOM TYPE" />
+            <TableColumn fx:id="colStatus" prefWidth="134.0" text="STATUS" />
+        </columns>
+      </TableView>
+      <Label layoutX="26.0" layoutY="310.0" text="STATUS">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbStatus" layoutX="26.0" layoutY="345.0" prefHeight="27.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1290.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.MainFormController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="336.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Group%203.png" />
+         </image>
+         <effect>
+            <DropShadow height="40.47" radius="15.84" spread="0.15" width="24.89">
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Button fx:id="settingId" layoutX="27.0" layoutY="458.0" mnemonicParsing="false" onAction="#onActionSetting" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Settings" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="stManageId" layoutX="24.0" layoutY="257.0" mnemonicParsing="false" onAction="#onActionStudent" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Student Manage" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="roomId" layoutX="24.0" layoutY="325.0" mnemonicParsing="false" onAction="#onActionRoom" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Room Manage" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="resId" layoutX="26.0" layoutY="394.0" mnemonicParsing="false" onAction="#onActionRervation" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Reservations" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardId" layoutX="26.0" layoutY="193.0" mnemonicParsing="false" onAction="#onActionDashboard" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="contecxtPane" layoutX="338.0" prefHeight="650.0" prefWidth="1290.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="1290.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/D24.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Button layoutX="84.0" layoutY="600.0" mnemonicParsing="false" onAction="#onActionLogOut" opacity="0.0" prefHeight="36.0" prefWidth="131.0" text="Button" />
+   </children>
+</AnchorPane>

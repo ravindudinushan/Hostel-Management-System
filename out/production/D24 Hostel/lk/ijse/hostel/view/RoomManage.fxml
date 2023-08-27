@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.RoomManage">
+   <children>
+      <Label layoutX="332.0" layoutY="14.0" prefHeight="38.0" prefWidth="277.0" text="ROOM INFORMATION">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="91.0" prefHeight="17.0" prefWidth="90.0" text="ROOM ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRoomId" layoutX="20.0" layoutY="120.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label layoutX="377.0" layoutY="92.0" prefHeight="22.0" prefWidth="104.0" text="ROOM TYPE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="92.0" prefHeight="22.0" prefWidth="104.0" text="KEY MONEY">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtKeymoney" layoutX="722.0" layoutY="121.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label layoutX="24.0" layoutY="169.0" prefHeight="17.0" prefWidth="90.0" text="QTY">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="20.0" layoutY="198.0" prefHeight="27.0" prefWidth="74.0" />
+      <JFXButton buttonType="RAISED" layoutX="596.0" layoutY="265.0" onAction="#onActionSave" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: green;" text="SAVE" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="705.0" layoutY="265.0" onAction="#onActionUpdate" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #192a56;" text="UPDATE" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="820.0" layoutY="265.0" onAction="#onActionDelete" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: red;" text="DELETE" textFill="WHITE" />
+      <TableView fx:id="tblRoom" layoutX="144.0" layoutY="312.0" onMouseClicked="#OnActionMiuseClickedRoom" prefHeight="314.0" prefWidth="654.0">
+         <columns>
+            <TableColumn fx:id="colRoomId" prefWidth="153.0" text="ROOM ID" />
+            <TableColumn fx:id="colRoomType" prefWidth="195.0" text="ROOM TYPE" />
+            <TableColumn fx:id="colKeyMoney" prefWidth="179.0" text="KEY MONEY" />
+            <TableColumn fx:id="colQty" prefWidth="125.0" text="QTY" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtRoomType" layoutX="377.0" layoutY="120.0" prefHeight="27.0" prefWidth="195.0" />
+   </children>
+</AnchorPane>
