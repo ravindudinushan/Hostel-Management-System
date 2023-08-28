@@ -42,7 +42,7 @@ public class LoginFormController implements Initializable {
             Stage stage= (Stage) LoginPane.getScene ().getWindow ();
             stage.setScene(new Scene (FXMLLoader.load(getClass().getResource("/lk/ijse/hostel/view/MainForm.fxml"))));
 
-            Notification.notification ("Login Succussfully");
+            Notification.notification ("Login Successfully");
         }
     }
 
@@ -83,12 +83,6 @@ public class LoginFormController implements Initializable {
     }
 
     public void CreatteACCMouseClick(MouseEvent mouseEvent) throws IOException {
-
-      /*  Stage stage= (Stage) LoginPane.getScene ().getWindow ();
-        stage.setScene(new Scene (FXMLLoader.load(getClass().getResource("/lk/ijse/hostel/view/MainAdminForm.fxml"))));
-
-
-*/
         FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("/lk/ijse/hostel/view/MainAdminForm.fxml"));
         Parent parent=fxmlLoader.load();
         Stage stage=new Stage();
