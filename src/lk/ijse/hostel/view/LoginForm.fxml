@@ -38,12 +38,12 @@
          </font></Button>
       <ImageView fx:id="imgOpen" fitHeight="27.0" fitWidth="25.0" layoutX="315.0" layoutY="292.0" onMouseClicked="#OnClickEyeOpen" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../Hostel-Management-System/src/lk/ijse/hostel/view/assets/o1.png" />
+            <Image url="@assets/open.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgEyeClosed" fitHeight="25.0" fitWidth="34.0" layoutX="315.0" layoutY="292.0" onMouseClicked="#eyeClosedOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../Hostel-Management-System/src/lk/ijse/hostel/view/assets/o2.png" />
+            <Image url="@assets/close.png" />
          </image>
       </ImageView>
       <Label layoutX="46.0" layoutY="169.0" text="UserName" textFill="WHITE">
