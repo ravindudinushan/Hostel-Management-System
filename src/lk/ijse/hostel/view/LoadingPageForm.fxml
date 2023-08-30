@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loadingPane" prefHeight="295.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.LoadingPageController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/loading.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="254.0" text="Loading..." textFill="#a5512c" />
+      <ProgressBar fx:id="proBar" layoutX="14.0" layoutY="275.0" prefHeight="7.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</AnchorPane>
