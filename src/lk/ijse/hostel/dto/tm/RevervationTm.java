@@ -65,4 +65,16 @@ public class RevervationTm {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "RevervationTm{" +
+                "resId='" + resId + '\'' +
+                ", stId='" + stId + '\'' +
+                ", stName='" + stName + '\'' +
+                ", roomId='" + roomId + '\'' +
+                ", roomName='" + roomName + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }

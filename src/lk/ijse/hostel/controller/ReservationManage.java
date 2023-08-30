@@ -72,7 +72,6 @@ public class ReservationManage implements Initializable {
     private TableColumn<?, ?> colStatus;
 
     private ReservationBO resBO = (ReservationBO) BOFactory.getBO (BOFactory.BOTypes.RESERVATION);
-    // public static  ObservableList<CourseDTO> CourseIds=FXCollections.observableArrayList();
     public static ObservableList<StudentDTO> stIds = FXCollections.observableArrayList ();
 
     @Override
@@ -124,7 +123,7 @@ public class ReservationManage implements Initializable {
 
         for (ReservationDTO dto : list) {
             if (resId.equals (dto.getResID ())) {
-                new Alert (Alert.AlertType.CONFIRMATION, "RESERVATION ADDED SUCCUSS").show ();
+                new Alert (Alert.AlertType.CONFIRMATION, "RESERVATION ADDED SUCCESS").show ();
                 return false;
             }
         }
@@ -154,7 +153,6 @@ public class ReservationManage implements Initializable {
                 System.out.println (room.getQty () - 1);
                 room.setQty (room.getQty () - 1);
                 resBO.updateRoom (room);
-               // tblReservation.getItems ().clear ();
                 loadAllRes ();
             }
         }
@@ -301,14 +299,14 @@ public class ReservationManage implements Initializable {
 
         Query query = session.createQuery ("select resId from Reservation order by resId desc");
 
-        String nextId = "T001";
+        String nextId = "RE001";
 
         if (query.list ().size () == 0) {
             return nextId;
         } else {
             String id = (String) query.list ().get (0);
 
-            String[] SUs = id.split ("T00");
+            String[] SUs = id.split ("RE00");
 
             for (String a : SUs) {
                 id = a;
@@ -316,7 +314,7 @@ public class ReservationManage implements Initializable {
 
             int idNum = Integer.parseInt (id);
 
-            id = "T00" + (idNum + 1);
+            id = "RE00" + (idNum + 1);
 
             transaction.commit ();
             session.close ();
