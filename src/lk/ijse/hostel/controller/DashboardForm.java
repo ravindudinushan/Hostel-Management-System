@@ -1,6 +1,5 @@
 package lk.ijse.hostel.controller;
 
-import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 import lk.ijse.hostel.bo.BOFactory;
 import lk.ijse.hostel.bo.custom.ReservationBO;
@@ -8,8 +7,6 @@ import lk.ijse.hostel.bo.custom.RoomBO;
 import lk.ijse.hostel.bo.custom.StudentBO;
 
 public class DashboardForm {
-    public Label lblStudent;
-    public Label lblRooms;
     public Text txtStudents;
     public Text txtRooms;
     public Text txtReservation;

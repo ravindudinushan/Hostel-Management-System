@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="1290.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.MainFormController">
+<AnchorPane prefHeight="650.0" prefWidth="1281.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.MainFormController">
    <children>
       <ImageView fitHeight="650.0" fitWidth="336.0" layoutX="-1.0" pickOnBounds="true">
          <image>
@@ -46,11 +46,11 @@
             <Font size="21.0" />
          </font>
       </Button>
-      <AnchorPane fx:id="contecxtPane" layoutX="338.0" prefHeight="650.0" prefWidth="1290.0">
+      <AnchorPane fx:id="contecxtPane" layoutX="338.0" prefHeight="650.0" prefWidth="942.0">
          <children>
-            <ImageView fitHeight="650.0" fitWidth="1290.0" pickOnBounds="true">
+            <ImageView fitHeight="650.0" fitWidth="942.0" layoutX="1.0" pickOnBounds="true">
                <image>
-                  <Image url="@assets/D24.jpg" />
+                  <Image url="@assets/D2.png" />
                </image>
             </ImageView>
          </children></AnchorPane>
