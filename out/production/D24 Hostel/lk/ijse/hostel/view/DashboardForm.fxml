@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,21 +8,11 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.DashboardForm">
    <children>
-      <ImageView fitHeight="650.0" fitWidth="942.0" layoutX="-3.0" pickOnBounds="true">
+      <ImageView fitHeight="650.0" fitWidth="948.0" layoutX="-3.0" pickOnBounds="true">
          <image>
             <Image url="@assets/D2.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblStudent" layoutX="360.0" layoutY="570.0" prefHeight="17.0" prefWidth="91.0" text="23">
-         <font>
-            <Font size="50.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblRooms" layoutX="449.0" layoutY="570.0" prefHeight="17.0" prefWidth="91.0" text="10">
-         <font>
-            <Font size="50.0" />
-         </font>
-      </Label>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/Rectangle%2025.png" />

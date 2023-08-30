@@ -2,6 +2,7 @@ package lk.ijse.hostel.controller;
 
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -17,6 +18,11 @@ import java.io.IOException;
 
 public class MainFormController {
 
+    @FXML
+    private AnchorPane root;
+    private Stage stage;
+    private Scene scene;
+
     public AnchorPane contecxtPane;
     public Button settingId;
     public Button stManageId;
@@ -24,14 +30,14 @@ public class MainFormController {
     public Button roomId;
     public Button resId;
 
-    public void onActionLogOut(ActionEvent actionEvent) throws IOException {
-       /* FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("/lk/ijse/hostel/view/LoginForm.fxml"));
-        Parent parent=fxmlLoader.load();
-        Stage stage=new Stage();
-        stage.setScene(new Scene (parent));
-        stage.show();*/
-
-
+    public void onActionLogOut(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/lk/ijse/hostel/view/LoginForm.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("LOGIN");
+        stage.centerOnScreen();
+        stage.show();
     }
 
     public void onActionDashboard(ActionEvent actionEvent) throws IOException {

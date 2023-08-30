@@ -10,16 +10,16 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="1281.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.MainFormController">
    <children>
-      <ImageView fitHeight="650.0" fitWidth="336.0" layoutX="-1.0" pickOnBounds="true">
+      <ImageView fitHeight="650.0" fitWidth="339.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assets/Group%203.png" />
+            <Image url="@assets/nav.png" />
          </image>
          <effect>
-            <DropShadow height="40.47" radius="15.84" spread="0.15" width="24.89">
+            <InnerShadow height="122.22" radius="59.6375" width="118.33">
                <input>
-                  <InnerShadow />
+                  <DropShadow />
                </input>
-            </DropShadow>
+            </InnerShadow>
          </effect>
       </ImageView>
       <Button fx:id="settingId" layoutX="27.0" layoutY="458.0" mnemonicParsing="false" onAction="#onActionSetting" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Settings" textFill="WHITE">
@@ -54,6 +54,13 @@
                </image>
             </ImageView>
          </children></AnchorPane>
-      <Button layoutX="84.0" layoutY="600.0" mnemonicParsing="false" onAction="#onActionLogOut" opacity="0.0" prefHeight="36.0" prefWidth="131.0" text="Button" />
+      <Button layoutX="105.0" layoutY="570.0" mnemonicParsing="false" onAction="#onActionLogOut" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #FF5154; -fx-background-radius: 40;" text="LogOut">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
    </children>
 </AnchorPane>
