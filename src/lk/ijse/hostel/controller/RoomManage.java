@@ -52,7 +52,6 @@ public class RoomManage implements Initializable {
 
     public void onActionSave(ActionEvent actionEvent) {
 
-
         if(checkValidation ()){
             int qty = Integer.parseInt (txtQty.getText ());
             String roomId = txtRoomId.getText ();
@@ -73,6 +72,7 @@ public class RoomManage implements Initializable {
                 if (checkduplicate ()) {
                     if (checkValidation ()){
                         roomBO.saveRoom (roomDTO);
+                        clearData ();
                         loadAllRoom ();
                         setRoomID ();
                     }

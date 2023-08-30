@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,20 +8,20 @@
 
 <AnchorPane prefHeight="649.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.Setting">
    <children>
-      <ImageView fitHeight="650.0" fitWidth="948.0" layoutX="-2.0" pickOnBounds="true">
+      <ImageView fitHeight="650.0" fitWidth="948.0" layoutX="-2.0" onMouseClicked="#onActionManageUser" opacity="0.9" pickOnBounds="true">
          <image>
-            <Image url="@assets/user.jpg" />
+            <Image url="@assets/setting.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="283.0" layoutY="15.0" onAction="#onActionManageUser" prefHeight="60.0" prefWidth="197.0" text="MANAGE USER" textFill="WHITE">
+      <Button layoutX="143.0" layoutY="57.0" mnemonicParsing="false" onAction="#onActionManageUser" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: #012f74; -fx-background-radius: 40;" text="Change User Password" textFill="WHITE">
          <font>
-            <Font size="23.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
-      </JFXButton>
-      <JFXButton layoutX="38.0" layoutY="15.0" onAction="#onActionManageUser" prefHeight="60.0" prefWidth="197.0" text="UPDATE USER" textFill="WHITE">
+      </Button>
+      <Button layoutX="397.0" layoutY="57.0" mnemonicParsing="false" onAction="#onActionAddUser" prefHeight="45.0" prefWidth="187.0" style="-fx-background-color: #012f74; -fx-background-radius: 40;" text="Create User Account" textFill="WHITE">
          <font>
-            <Font size="23.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
-      </JFXButton>
+      </Button>
    </children>
 </AnchorPane>
