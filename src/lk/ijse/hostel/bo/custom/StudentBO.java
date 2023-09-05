@@ -1,6 +1,5 @@
 package lk.ijse.hostel.bo.custom;
 
-import javafx.collections.ObservableList;
 import lk.ijse.hostel.bo.SuperBO;
 import lk.ijse.hostel.dto.StudentDTO;
 
@@ -12,8 +11,5 @@ public interface StudentBO extends SuperBO {
     boolean updateStudent(StudentDTO studentDTO);
     boolean deleteStudent(StudentDTO studentDTO);
     StudentDTO getStudent(String id) throws Exception;
-
     int getStudnetCount();
-
-
 }

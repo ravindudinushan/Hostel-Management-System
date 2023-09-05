@@ -33,7 +33,7 @@ public class MainAdminFormController {
             Stage stage4 = (Stage) contextMainAdmin.getScene().getWindow();
             stage4.close();
         }else{
-            new Alert (Alert.AlertType.ERROR, "INVALID ADMIN ATHUENTICATION").show ();
+            new Alert (Alert.AlertType.ERROR, "INVALID ADMIN AUTHENTICATION").show ();
             txtPassWord.clear ();
             txtUserName.clear ();
         }

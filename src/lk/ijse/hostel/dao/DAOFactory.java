@@ -1,11 +1,5 @@
 package lk.ijse.hostel.dao;
 
-import lk.ijse.hostel.bo.BOFactory;
-import lk.ijse.hostel.bo.SuperBO;
-import lk.ijse.hostel.bo.custom.impl.RevervationBOImpl;
-import lk.ijse.hostel.bo.custom.impl.RoomBOImpl;
-import lk.ijse.hostel.bo.custom.impl.StudentBOImpl;
-import lk.ijse.hostel.bo.custom.impl.UserBOImpl;
 import lk.ijse.hostel.dao.custom.impl.RevervationDAOImpl;
 import lk.ijse.hostel.dao.custom.impl.RoomDAOImpl;
 import lk.ijse.hostel.dao.custom.impl.StudentDAOImpl;

@@ -68,4 +68,16 @@ public class StudentDTO {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    @Override
+    public String toString() {
+        return "StudentDTO{" +
+                "stId='" + stId + '\'' +
+                ", stName='" + stName + '\'' +
+                ", address='" + address + '\'' +
+                ", contact='" + contact + '\'' +
+                ", dob='" + dob + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
 }

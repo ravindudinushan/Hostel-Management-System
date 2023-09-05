@@ -33,7 +33,7 @@ public class Navigation {
                 iniUi("Setting.fxml");
                 break;
             case DASHBOARD:
-                window.setTitle ("DASBOARD");
+                window.setTitle ("DASHBOARD");
                 iniUi("DashboardForm.fxml");
                 break;
             default:

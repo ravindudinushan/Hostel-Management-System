@@ -35,6 +35,7 @@ public class RoomDAOImpl implements RoomDAO {
     public void update(Room room) {
         session.update (room);
     }
+
     @Override
     public void delete(Room room) {
         session.delete (room);

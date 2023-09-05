@@ -6,9 +6,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import lk.ijse.hostel.bo.BOFactory;
-import lk.ijse.hostel.bo.custom.StudentBO;
 import lk.ijse.hostel.bo.custom.UserBO;
-import lk.ijse.hostel.dto.RoomDTO;
 import lk.ijse.hostel.dto.UserDTO;
 import lk.ijse.hostel.util.SendMail;
 import lk.ijse.hostel.util.SessionFactoryConfig;
@@ -38,27 +36,6 @@ public class UserAccController implements Initializable {
         String userName = txtUserName.getText ();
         String email=txtEmail.getText ();
 
-        /*List <UserDTO>allRoom = userBO.loadAll ();
-
-        for (UserDTO u : allRoom) {
-            if (!(u.getUserId ().equals (userId))){
-                if (pass.equals (rePass)){
-                    userBO.saveUser (new UserDTO (
-                            userId,
-                            userName,
-                            pass
-                    ));
-                    new Alert (Alert.AlertType.CONFIRMATION, "USER ACCOUNT CREATED SUCCUSS").show ();
-
-                }else {
-                    new Alert (Alert.AlertType.ERROR, "Check your Password and Try Again").show ();
-                }
-            }else{
-                new Alert (Alert.AlertType.ERROR, "THIS USER ID ALREADY GET").show ();
-            }
-        }
-        */
-
        if (checkDuplidate ()){
           if (checkValidation ()){
               if(pass.equals (rePass)){
@@ -67,7 +44,7 @@ public class UserAccController implements Initializable {
                           userName,
                           pass
                   ));
-                  new Alert (Alert.AlertType.CONFIRMATION, "USER ACCOUNT CREATED SUCCUSS").show ();
+                  new Alert (Alert.AlertType.CONFIRMATION, "USER ACCOUNT CREATED SUCCESS").show ();
                   SendMail.outMail ("YOU ARE USER IN D24HOSTEL SYSTEM",email,"D24HOSTEL");
                   clearFeilds ();
                   setUserId ();

@@ -22,16 +22,6 @@ public class Room {
     public Room() {
     }
 
-    @Override
-    public String toString() {
-        return "Room{" +
-                "roomId='" + roomId + '\'' +
-                ", type='" + type + '\'' +
-                ", keyMoney='" + keyMoney + '\'' +
-                ", qty=" + qty +
-                '}';
-    }
-
     @Column(name = "keyMoney")
     private String keyMoney;
     @Column(name = "qty")
@@ -69,5 +59,15 @@ public class Room {
 
     public void setQty(int qty) {
         this.qty = qty;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "roomId='" + roomId + '\'' +
+                ", type='" + type + '\'' +
+                ", keyMoney='" + keyMoney + '\'' +
+                ", qty=" + qty +
+                '}';
     }
 }

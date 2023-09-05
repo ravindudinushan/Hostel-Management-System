@@ -14,8 +14,6 @@ public class UserDTO {
         this.password = password;
     }
 
-
-
     public String getUserName() {
         return userName;
     }
@@ -38,5 +36,14 @@ public class UserDTO {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    @Override
+    public String toString() {
+        return "UserDTO{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

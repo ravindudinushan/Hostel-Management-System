@@ -139,7 +139,7 @@ public class RevervationBOImpl implements ReservationBO {
 
     @Override
     public boolean updateRoom(RoomDTO dto) {
-        session=SessionFactoryConfig.getInstance ().getSession ();
+        session = SessionFactoryConfig.getInstance ().getSession ();
         Transaction transaction=session.beginTransaction ();
 
         try {
@@ -287,7 +287,6 @@ public class RevervationBOImpl implements ReservationBO {
         reservationDAO.setSession (session);
         List<Reservation>list= reservationDAO. loadAll ();
         List<ReservationDTO>resList= new ArrayList<> ();
-        System.out.println ("Check1");
 
         for (Reservation res :list) {
             resList.add(new ReservationDTO (
@@ -310,8 +309,6 @@ public class RevervationBOImpl implements ReservationBO {
                             res.getStatus ()
             ));
         }
-
-        System.out.println ("Check2");
         return resList;
     }
 }

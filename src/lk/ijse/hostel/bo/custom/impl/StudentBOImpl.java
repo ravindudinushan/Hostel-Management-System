@@ -1,6 +1,5 @@
 package lk.ijse.hostel.bo.custom.impl;
 
-import javafx.collections.ObservableList;
 import lk.ijse.hostel.bo.custom.StudentBO;
 import lk.ijse.hostel.dao.DAOFactory;
 import lk.ijse.hostel.dao.custom.StudentDAO;
@@ -12,7 +11,6 @@ import org.hibernate.Transaction;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class StudentBOImpl implements StudentBO {
 

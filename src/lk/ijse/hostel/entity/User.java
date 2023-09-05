@@ -24,7 +24,6 @@ public class User {
         Password = password;
     }
 
-
     public String getUserName() {
         return userName;
     }
@@ -47,5 +46,14 @@ public class User {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", Password='" + Password + '\'' +
+                '}';
     }
 }

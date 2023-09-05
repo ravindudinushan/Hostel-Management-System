@@ -50,4 +50,14 @@ public class RoomDTO {
     public void setQty(int qty) {
         this.qty = qty;
     }
+
+    @Override
+    public String toString() {
+        return "RoomDTO{" +
+                "roomID='" + roomID + '\'' +
+                ", type='" + type + '\'' +
+                ", keyMoney='" + keyMoney + '\'' +
+                ", qty=" + qty +
+                '}';
+    }
 }

@@ -1,6 +1,5 @@
 package lk.ijse.hostel.dao.custom.impl;
 
-import javafx.collections.ObservableList;
 import lk.ijse.hostel.dao.custom.StudentDAO;
 import lk.ijse.hostel.entity.Student;
 import org.hibernate.Session;

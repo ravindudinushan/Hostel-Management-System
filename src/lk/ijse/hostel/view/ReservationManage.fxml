@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.ReservationManage">
+<AnchorPane prefHeight="650.0" prefWidth="942.0" style="-fx-background-color: #b1b1b1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostel.controller.ReservationManage">
    <children>
       <Label layoutX="246.0" layoutY="14.0" prefHeight="39.0" prefWidth="385.0" text="RESERVATION INFORMATION">
          <font>

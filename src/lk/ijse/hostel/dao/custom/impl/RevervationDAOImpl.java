@@ -1,14 +1,11 @@
 package lk.ijse.hostel.dao.custom.impl;
 
-import javafx.collections.ObservableList;
 import lk.ijse.hostel.dao.custom.ReservationDAO;
 import lk.ijse.hostel.entity.Reservation;
-import lk.ijse.hostel.entity.Room;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 import java.util.List;
-import java.util.Observable;
 
 public class RevervationDAOImpl implements ReservationDAO {
 

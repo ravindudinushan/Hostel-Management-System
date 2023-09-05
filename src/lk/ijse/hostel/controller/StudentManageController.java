@@ -54,7 +54,7 @@ public class StudentManageController implements Initializable {
         boolean isDeleted=studentBO.deleteStudent (studentDTO);
 
         if (isDeleted){
-            new Alert (Alert.AlertType.INFORMATION, "Student Delete Succuss").show ();
+            new Alert (Alert.AlertType.INFORMATION, "Student Delete Success").show ();
             tblStudent.getItems ().clear ();
             clearData ();
             loadAllStudent ();
@@ -73,7 +73,7 @@ public class StudentManageController implements Initializable {
         boolean isUpdate=studentBO.updateStudent (studentDTO);
 
         if (isUpdate){
-            new Alert (Alert.AlertType.INFORMATION, "Student Update Succuss").show ();
+            new Alert (Alert.AlertType.INFORMATION, "Student Update Success").show ();
             tblStudent.getItems ().clear ();
             clearData ();
             loadAllStudent ();

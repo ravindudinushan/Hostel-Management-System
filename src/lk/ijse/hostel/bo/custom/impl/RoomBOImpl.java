@@ -3,11 +3,8 @@ package lk.ijse.hostel.bo.custom.impl;
 import lk.ijse.hostel.bo.custom.RoomBO;
 import lk.ijse.hostel.dao.DAOFactory;
 import lk.ijse.hostel.dao.custom.RoomDAO;
-import lk.ijse.hostel.dao.custom.StudentDAO;
 import lk.ijse.hostel.dto.RoomDTO;
-import lk.ijse.hostel.dto.StudentDTO;
 import lk.ijse.hostel.entity.Room;
-import lk.ijse.hostel.entity.Student;
 import lk.ijse.hostel.util.SessionFactoryConfig;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -68,7 +65,7 @@ public class RoomBOImpl implements RoomBO {
 
     @Override
     public boolean updateRoom(RoomDTO dto) {
-        session=SessionFactoryConfig.getInstance ().getSession ();
+        session = SessionFactoryConfig.getInstance ().getSession ();
         Transaction transaction=session.beginTransaction ();
 
         try {
@@ -91,7 +88,7 @@ public class RoomBOImpl implements RoomBO {
 
     @Override
     public boolean deleteRoom(RoomDTO dto) {
-        session=SessionFactoryConfig.getInstance ().getSession ();
+        session = SessionFactoryConfig.getInstance ().getSession ();
         Transaction transaction=session.beginTransaction ();
 
         try{

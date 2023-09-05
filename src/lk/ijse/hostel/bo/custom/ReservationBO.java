@@ -10,7 +10,7 @@ import java.util.List;
 public interface ReservationBO extends SuperBO {
     List<String> getStudentIds();
     List<String> getRoomIds();
-     StudentDTO getStudent(String id);
+    StudentDTO getStudent(String id);
     RoomDTO getRoom(String id);
     ReservationDTO getRes( String resID);
     boolean updateRoom(RoomDTO dto);

@@ -30,7 +30,7 @@ public class ChangePassFormController {
 
         if (textCode.equals (verifyCode)){
             userBO.updateUser (new UserDTO (userId,userName,newPass));
-            new Alert (Alert.AlertType.INFORMATION, "YOUR PASSWORD CHANGED SUCCUSS").show ();
+            new Alert (Alert.AlertType.INFORMATION, "YOUR PASSWORD CHANGED SUCCESS").show ();
             clearFeild ();
         }else {
             new Alert (Alert.AlertType.WARNING, "CHECK YOUR VERIFY CODE").show ();

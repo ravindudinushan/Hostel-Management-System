@@ -36,8 +36,6 @@ public class Student {
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "student")
     private List<Reservation> reservationList;
 
-
-
     public String getStId() {
         return stId;
     }
