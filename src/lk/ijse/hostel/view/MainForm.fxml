@@ -22,7 +22,7 @@
             </InnerShadow>
          </effect>
       </ImageView>
-      <Button fx:id="settingId" layoutX="27.0" layoutY="458.0" mnemonicParsing="false" onAction="#onActionSetting" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Settings" textFill="WHITE">
+      <Button fx:id="settingId" layoutX="26.0" layoutY="517.0" mnemonicParsing="false" onAction="#onActionSetting" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Settings" textFill="WHITE">
          <font>
             <Font size="21.0" />
          </font></Button>
@@ -54,13 +54,18 @@
                </image>
             </ImageView>
          </children></AnchorPane>
-      <Button layoutX="105.0" layoutY="570.0" mnemonicParsing="false" onAction="#onActionLogOut" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #FF5154; -fx-background-radius: 40;" text="LogOut">
+      <Button layoutX="105.0" layoutY="585.0" mnemonicParsing="false" onAction="#onActionLogOut" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #FF5154; -fx-background-radius: 40;" text="LogOut">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
          <effect>
             <DropShadow />
          </effect>
+      </Button>
+      <Button fx:id="pendingId" layoutX="28.0" layoutY="457.0" mnemonicParsing="false" onAction="#onActionPendingPayment" prefHeight="44.0" prefWidth="284.0" style="-fx-background-color: #0c2461;" text="Pending Payment" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
       </Button>
    </children>
 </AnchorPane>

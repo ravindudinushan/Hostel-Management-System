@@ -62,7 +62,6 @@ public class StudentManageController implements Initializable {
         }else{
             new Alert (Alert.AlertType.ERROR, "Something went Wrong").show ();
         }
-
     }
 
     public void onActionUpdate(ActionEvent actionEvent) {
@@ -109,7 +108,6 @@ public class StudentManageController implements Initializable {
                     loadAllStudent ();
                     setStID ();
                 }
-
         }
     }
 
@@ -174,7 +172,6 @@ public class StudentManageController implements Initializable {
             new Alert(Alert.AlertType.ERROR, "Address should be at least 3 characters long").show();
             txtAdress.requestFocus();
             return false;
-        //} else if (!contactText.matches(".*(?:7|0|(?:\\\\\\\\+94))[0-9]{9,10}")) {
          } else if (!contactText.matches("\\d{10}")) {
             new Alert(Alert.AlertType.ERROR, "Invalid Contact").show();
             txtContact.requestFocus();

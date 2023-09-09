@@ -23,6 +23,9 @@ public class MainFormController {
     private Stage stage;
     private Scene scene;
 
+    @FXML
+    private Button pendingId;
+
     public AnchorPane contecxtPane;
     public Button settingId;
     public Button stManageId;
@@ -75,5 +78,11 @@ public class MainFormController {
         slider.play();
         slider.setToX (0);
         slider.play();
+    }
+
+    @FXML
+    void onActionPendingPayment(ActionEvent event) throws IOException {
+        Navigation.navigate(Routes.PENDING_PAYMENTS,contecxtPane);
+        slideButton (pendingId);
     }
 }

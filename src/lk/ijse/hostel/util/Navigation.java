@@ -36,6 +36,10 @@ public class Navigation {
                 window.setTitle ("DASHBOARD");
                 iniUi("DashboardForm.fxml");
                 break;
+            case PENDING_PAYMENTS:
+                window.setTitle ("PENDING PAYMENT");
+                iniUi("PendingKeyPaymentForm.fxml");
+                break;
             default:
                 System.out.println ("Something Wrong");
         }

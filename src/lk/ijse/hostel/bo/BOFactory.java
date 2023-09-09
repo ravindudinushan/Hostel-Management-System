@@ -1,9 +1,6 @@
 package lk.ijse.hostel.bo;
 
-import lk.ijse.hostel.bo.custom.impl.RevervationBOImpl;
-import lk.ijse.hostel.bo.custom.impl.RoomBOImpl;
-import lk.ijse.hostel.bo.custom.impl.StudentBOImpl;
-import lk.ijse.hostel.bo.custom.impl.UserBOImpl;
+import lk.ijse.hostel.bo.custom.impl.*;
 
 public class BOFactory {
 
@@ -19,7 +16,7 @@ public class BOFactory {
     }
 
     public enum BOTypes{
-        STUDENT,ROOM,USER,RESERVATION
+        STUDENT,ROOM,USER,RESERVATION,PENDING_PAYMENTS
     }
 
     public static SuperBO getBO(BOTypes boTypes){
@@ -32,6 +29,8 @@ public class BOFactory {
                 return new RevervationBOImpl ();
             case USER:
                 return new UserBOImpl ();
+            case PENDING_PAYMENTS:
+                return new PendingPaymentsBOImpl();
             default:
                 return null;
         }
